@@ -15,6 +15,14 @@ app = Flask(__name__)
 # Allow all origins in production (update with your Vercel URL for security)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
+@app.route('/', methods=['GET'])
+def index():
+    return jsonify({
+        "message": "AI Teaching Assistant API",
+        "status": "running",
+        "endpoints": ["/api/health", "/api/explain", "/api/quiz/generate"]
+    })
+
 # Initialize services
 ai_teacher = AITeacher()
 quiz_generator = QuizGenerator()
