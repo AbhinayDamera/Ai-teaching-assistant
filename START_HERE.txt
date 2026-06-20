@@ -1,0 +1,95 @@
+╔═══════════════════════════════════════════════════════════╗
+║   Voice-Enabled AI Teaching Assistant - Quick Start      ║
+║   For Haryana Government Schools                          ║
+╚═══════════════════════════════════════════════════════════╝
+
+🚀 SIMPLE 3-STEP SETUP:
+
+┌─────────────────────────────────────────────────────────┐
+│ STEP 1: Get FREE Gemini API Key (2 minutes)            │
+└─────────────────────────────────────────────────────────┘
+   1. Open: https://makersuite.google.com/app/apikey
+   2. Sign in with Google
+   3. Click "Create API Key"
+   4. Copy the key (starts with "AIza...")
+
+┌─────────────────────────────────────────────────────────┐
+│ STEP 2: Run Setup (5 minutes)                          │
+└─────────────────────────────────────────────────────────┘
+   Double-click: setup.bat
+   
+   Wait for it to install everything...
+   (This will download and install required packages)
+
+┌─────────────────────────────────────────────────────────┐
+│ STEP 3: Configure & Run                                │
+└─────────────────────────────────────────────────────────┘
+   a) Double-click: create_env.bat
+   b) Paste your API key when asked
+   c) Double-click: run.bat
+   
+   🎉 App will open in your browser!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 IF YOU GET ERRORS:
+
+❌ "Python not found"
+   → Install Python from: https://www.python.org/downloads/
+   → Make sure to check "Add Python to PATH"
+
+❌ "pip not found"  
+   → Restart your computer after installing Python
+
+❌ PyAudio installation fails
+   → This is normal on Windows! The setup.bat will handle it
+   → Or manually run: pip install pipwin && pipwin install pyaudio
+
+❌ Microphone not working
+   → Test it: python test_audio.py
+   → Check browser permissions (click lock icon)
+   → Use Chrome browser (works best)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 USEFUL FILES:
+
+• README.md           - Full documentation
+• SETUP_GUIDE.md      - Detailed setup instructions
+• DEPLOYMENT.md       - How to deploy on smart board
+• test_audio.py       - Test your microphone/speakers
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎓 HOW TO USE:
+
+Once the app opens:
+1. Click "Explain Concept" for learning
+2. Click "Quiz Mode" for practice
+3. Press microphone button and speak in Hindi/English/Hinglish
+
+Examples:
+• "Photosynthesis ko explain karo"
+• "Give me quiz on fractions"
+• "What is gravity?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 COST: FREE!
+
+Gemini API is FREE for:
+• 60 requests per minute
+• 1,500 requests per day
+• Perfect for classroom use!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆘 NEED HELP?
+
+• Read: SETUP_GUIDE.md
+• Check: README.md
+• Issues: Create GitHub issue
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Happy Teaching! 🎓✨

@@ -1,0 +1,245 @@
+/* ===== LANDING PAGE ===== */
+
+.landing-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== ANIMATED BLOBS ===== */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  animation: float 8s ease-in-out infinite;
+}
+
+.blob-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #667eea, #764ba2);
+  top: -150px;
+  left: -150px;
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #f093fb, #f5576c);
+  bottom: -100px;
+  right: -100px;
+  animation-delay: 3s;
+}
+
+.blob-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #4facfe, #00f2fe);
+  bottom: 100px;
+  left: 100px;
+  animation-delay: 5s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50%       { transform: translateY(-40px) scale(1.05); }
+}
+
+/* ===== CONTENT ===== */
+.landing-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 40px 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* ===== BADGE ===== */
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e0e7ff;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  margin-bottom: 36px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== TITLE ===== */
+.landing-title-block {
+  margin-bottom: 20px;
+}
+
+.landing-title-en {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 20px rgba(102, 126, 234, 0.5);
+}
+
+.landing-title-hi {
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, #f093fb, #f5576c, #fda085);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  min-height: 60px;
+}
+
+.cursor {
+  -webkit-text-fill-color: #f093fb;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ===== SUBTITLE ===== */
+.landing-subtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.landing-subtitle span {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1rem;
+}
+
+/* ===== FEATURE PILLS ===== */
+.feature-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 12px 20px;
+  transition: all 0.3s;
+}
+
+.pill:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-3px);
+}
+
+.pill-icon {
+  font-size: 1.5rem;
+}
+
+.pill-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.pill-en {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.pill-hi {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== CTA BUTTON ===== */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 20px 50px;
+  border-radius: 60px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.5);
+  transition: all 0.3s;
+  margin-bottom: 32px;
+  letter-spacing: 0.3px;
+}
+
+.cta-button:hover {
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.7);
+}
+
+.cta-en {
+  color: #fff;
+}
+
+.cta-divider {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+
+.cta-hi {
+  color: #fde68a;
+}
+
+.cta-arrow {
+  font-size: 1.4rem;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover .cta-arrow {
+  transform: translateX(6px);
+}
+
+/* ===== FOOTER ===== */
+.landing-footer {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .landing-content {
+    padding: 30px 20px;
+  }
+
+  .feature-pills {
+    gap: 10px;
+  }
+
+  .pill {
+    padding: 10px 14px;
+  }
+
+  .cta-button {
+    padding: 16px 36px;
+    font-size: 1.1rem;
+  }
+}
