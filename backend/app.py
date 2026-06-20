@@ -11,9 +11,7 @@ import base64
 load_dotenv()
 
 app = Flask(__name__)
-
-# Allow all origins in production (update with your Vercel URL for security)
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app)  # Allow all origins for all routes
 
 @app.route('/', methods=['GET'])
 def index():
